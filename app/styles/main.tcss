@@ -1,0 +1,89 @@
+Kanban{
+    height: 1fr;
+}
+
+Kanban Static {
+    color: $text;
+    border: outer $panel;
+    padding: 0 0;
+    width: 4fr;
+    padding: 0 0;
+    margin: 1 0 0 1;
+}
+
+Kanban Button {
+    background: #a6d189;
+    color: $panel; 
+    border: outer $panel;
+    min-width: 5;
+    padding: 0 0;
+    margin: 1 1 0 0;
+}
+
+.kanban_panel {
+    height: 1fr;
+    width: 1fr;
+    margin: 1 2;
+    background: $background;
+    border: $panel panel;
+    overflow: auto auto;
+
+    border-title-color: $text;
+    border-title-background: $background;
+    border-title-style: bold;
+  
+    border-subtitle-color: $text;
+    border-subtitle-background: $panel;
+}
+
+PopupModal {
+    align: center middle;
+}
+
+#popupscreen {
+    grid-size: 3;
+    grid-gutter: 1 2;
+    grid-rows: auto 3;
+    padding: 0 1;
+    width: 60;
+    height: 12;
+    border: thick $panel 80%;
+    background: $surface;
+    align: center middle;
+    content-align: center middle;
+}
+
+PopupModal Button {
+    width: 1fr;
+    min-width: 0;
+    margin: 0 1;
+}
+
+#selectedinfo {
+    margin: 1 1;
+}
+
+#button_confirm {
+    column-span: 2;
+}
+
+Input {
+    column-span: 3;
+}
+
+#popuptitle {
+    column-span: 3;
+    height: 15;
+    width: 1fr;
+    content-align: center middle;
+    border: none;
+    text-style: bold;
+}
+
+.red {
+    background: #e78284;
+}
+
+.yellow {
+    background: #e5c890;
+}
